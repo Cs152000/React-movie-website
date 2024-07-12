@@ -10,7 +10,7 @@ const history=useNavigate()
   const LoginButton=async(e)=>{
     e.preventDefault();
 try{
-    const loginresult=await axios.post("http://localhost:3000/login",{email,password})
+    const loginresult=await axios.post("https://react-movie-website.onrender.com/login",{email,password})
     console.log(loginresult.data)
     alert(" log in successfully");
     history("/home")
