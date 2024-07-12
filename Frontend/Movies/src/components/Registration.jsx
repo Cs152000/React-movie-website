@@ -12,7 +12,7 @@ const history=useNavigate()
     const RegisterButton=async(e)=>{
         e.preventDefault();
 try{
-        const result=await axios.post("http://localhost:3000/register",{name,email,password})
+        const result=await axios.post("https://react-movie-website.onrender.com/register",{name,email,password})
         console.log(result.data)
         alert("Registration successfully.please login to home page");
       history("/login")
